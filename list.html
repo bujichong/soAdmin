@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html class="  html_form">
+<head>
+<title>欢迎使用祥瑞星网运营平台</title>
+<meta charset="utf-8">
+<link rel="icon" href="/images/xrzn_16_16.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="themes/default/easyui.css" />
+<link rel="stylesheet" type="text/css" href="themes/icon.css" />
+<link type="text/css" rel="stylesheet" href="css/base.css" />
+</head>
+<body class="easyui-layout">
+
+<!-- headTools -->
+<div class="headTools" data-options="region:'north'" border="false">
+	<div class="pad10">
+		<div class="toolsBox btn-group">
+		      <button class="btn btn-tools bg-grey grid-add" type="button"><span class="s-icon icon-plus"></span>增加</button>
+		      <button class="btn btn-tools bg-grey grid-edit" type="button"><span class="s-icon icon-pencil"></span>编辑</button>
+		      <button class="btn btn-tools bg-grey grid-del" type="button"><span class="s-icon icon-remove"></span>删除</button>
+		      <button class="btn btn-tools bg-grey grid-refresh" type="button"><span class="s-icon icon-refresh"></span>刷新</button>
+		</div>
+		<div class="gridSearch">
+			<form class="form-search">
+				<select class="drop" name="sel">
+					<option value="1">选项1</option>
+				</select>
+				<input type="text" name="date" placeholder="请选择日期" class="txt w90 hk-date">
+				<input type="text" name="key" placeholder="关键词" class="txt w90">
+				<input class="btn bg-warning btn-gridListSearch" type="button" value="搜 索" />
+				<button type="button" class="btn btn-showMoreSearch">高级搜索 <span class="s-icon icon-down-w"></span></button>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- searchmoreCont -->
+<div id="searchmoreCont" class="moreTools none">
+	<form class="form-listMoreSearch">
+		<div class="grid">
+			<div class="col-4"><label class="lab-item">订单号：</label><span class="fl wp60"><input type="text" class="txt wp90" name="bookingId" /></span></div>
+			<div class="col-4"><label class="lab-item">下单时间：</label><input type="text" class="txt w90 hk-date" name="txt" /> - <input type="text" class="txt w90 hk-date" name="txt" /></div>
+			<div class="col-4"><label class="lab-item">泵送方式：</label><span class="fl wp60"><input type="text" class="txt wp90" name="bstyle" /></span></div>
+		</div>
+	</form>
+</div>
+
+<!-- gridMain -->
+<div id="gridMain" data-options="region:'center'" border="false">
+
+	<div id="mainLayoutBox" class="easyui-layout" style="overflow-y: hidden;"  fit="true" scroll="no">
+		<!-- 数据grid表格 -->
+		<div class="tableGridbox" data-options="region:'center'" border="false">
+			<div id="dataListGrid" data-options="border:false" fit="true"></div>
+		</div>
+ 	</div>
+
+</div>
+
+
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="js/my97/WdatePicker.js"></script>
+<script type="text/javascript" src="js/jquery.easyui.ext.js"></script>
+<script type="text/javascript" src="js/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/tools.js"></script>
+<script type="text/javascript" src="js/runing.js"></script>
+
+<script type="text/javascript">
+// $('#mainbox').layout("collapse","north");
+
+$('#dataListGrid').datagrid({
+	//title:'DataGrid',
+	url:'json/datagrid_data1.json',
+	 //url:'js/datagrid_data_empty.json',
+	method : 'get',//默认是post
+	//width:700,
+	// height:500,
+	//fitColumns:true,
+	pagination:true,
+	//singleSelect : true,
+	pageSize:10,
+	loadMsg : '玩命加载中...',
+	view: myview,
+	emptyMsg: '暂无数据...',
+	columns:[[
+		{field:'ck',checkbox:true}, //开启多选框 必须：singleSelect : false
+		//{field:'no',title:"编号",hidden:true},
+		{field:'pos',title:'设备存放位置',width:100,align:'center'},
+		{field:'person',title:'负责人',width:100},
+		{field:'phone',title:'联系电话',width:100,align:'center'},
+		{field:'number',title:'设备数量',width:100,align:'center'},
+		{field:'remarks',title:'工作备注',width:100,align:'center'},
+		{field:'op',title:'操作',width:150,align:'center',formatter : function (value,row,index) {
+			var no = row.no;
+			return '<a class="op-grid op-gridInNew" data-opt={"no":'+no+'} href="form.html?no='+no+'" title="查看-'+no+'"><span class="s-icon icon-search"></span>查看</a> <a class="op-grid op-gridInNew" data-opt={"no":'+no+'} href="form.html?no='+no+'" title="编辑-'+no+'"><span class="s-icon icon-pencil"></span>编辑</a> <a class="op-grid op-gridDel" data-opt={"no":'+no+'} href="#"><span class="s-icon icon-remove"></span>删除</a>';
+		//return value;
+		}}
+  	]],
+	onClickRow:function (rowIndex, rowData) {
+		//nowSel = rowData;
+	},
+	onLoadSuccess : function () {
+		sos.index.openUrlInIframe.call($('.op-gridInNew'));
+		// $('.op-gridInNew').click(function() {
+		// 	$T.openInTopTab(this);
+		// 	return false;
+		// });
+
+		$('.op-gridDel').click(function () {//删除单条操作
+			var data = $(this).data('opt');
+			$.reqUrlEx({//增加型ajax请求，带等待状态和成功提示框
+				url : 'js/true.json',
+				data : data,
+				msg: '您确定要删除此记录?',
+				type : 'get',//默认不设置为post
+				success : function (data) {
+					window.console && console.log(data,'请求成功~');
+					$T.gridRefresh('#dataListGrid');//操作完后刷新数据表
+				}
+			});
+			return false;
+		});
+	}
+});
+
+$T.gridSearchAndMoreEvent({
+	moreSearchHeight : 50
+});
+</script>
+
+</body>
+</html>

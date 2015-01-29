@@ -1,0 +1,2210 @@
+@charset "UTF-8";
+/* base yui reset.css, repair 20091217*/
+/* line 3, D:/workspace/xrzn-admin/scss/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_reset.scss */
+table { border-collapse: collapse; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_reset.scss */
+address, caption, cite, code, dfn, strong, th, var { font-style: normal; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_reset.scss */
+h1, h2, h3, h4, h5, h6 { font-size: 1em; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_reset.scss */
+q:before, q:after { content: ''; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_reset.scss */
+abbr, acronym { border: 0; font-variant: normal; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_reset.scss */
+sup { vertical-align: text-top; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_reset.scss */
+sub { vertical-align: text-bottom; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_reset.scss */
+ins { text-decoration: none; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_reset.scss */
+del { text-decoration: line-through; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_reset.scss */
+input, textarea, select, button { font-family: inherit; font-weight: inherit; font-size: 1em; padding: 0; outline: none; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_reset.scss */
+.clear { height: 0; font-size: 0; line-height: 0; clear: both; overflow: hidden; }
+
+/* line 4, D:/workspace/xrzn-admin/scss/_reset.scss */
+html { color: #000; background: #fff; }
+
+/* line 5, D:/workspace/xrzn-admin/scss/_reset.scss */
+body { font-size: 0.75em; color: #333; background: #fff; font-family: Verdana,"Microsoft YaHei","STHeiti Light", Tahoma, Arial, Helvetica, sans-serif; }
+
+/* line 11, D:/workspace/xrzn-admin/scss/_reset.scss */
+a { text-decoration: none; color: #333; }
+
+/* line 12, D:/workspace/xrzn-admin/scss/_reset.scss */
+a:hover { color: #2275c9; }
+
+/* line 13, D:/workspace/xrzn-admin/scss/_reset.scss */
+a img { border-width: 0px; }
+
+/* line 14, D:/workspace/xrzn-admin/scss/_reset.scss */
+.clearfix { *zoom: 1; }
+/* line 16, D:/workspace/xrzn-admin/scss/_reset.scss */
+.clearfix:before, .clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+/* line 19, D:/workspace/xrzn-admin/scss/_reset.scss */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+
+/* line 20, D:/workspace/xrzn-admin/scss/_reset.scss */
+::-webkit-scrollbar-track-piece { background-color: #ccc; -webkit-border-radius: 2px; }
+
+/* line 21, D:/workspace/xrzn-admin/scss/_reset.scss */
+::-webkit-scrollbar-thumb:vertical { background-color: #999; -webkit-border-radius: 2px; }
+
+/* line 22, D:/workspace/xrzn-admin/scss/_reset.scss */
+::-webkit-scrollbar-thumb:horizontal { background-color: #999; -webkit-border-radius: 2px; }
+
+/* line 23, D:/workspace/xrzn-admin/scss/_reset.scss */
+::-webkit-scrollbar-thumb:vertical:hover, ::-webkit-scrollbar-thumb:horizontal:hover { background: #42475e; cursor: hand; cursor: pointer; }
+
+/* line 1, D:/workspace/xrzn-admin/scss/_style.scss */
+.main-header { height: 60px; background-color: #3C3C3B; color: #ccc; }
+
+/* line 2, D:/workspace/xrzn-admin/scss/_style.scss */
+.main-sidebar { position: absolute; top: 58px; width: 180px; left: 0px; bottom: 0px; background-color: #fff; border-right: 1px solid #d8d8d8; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_style.scss */
+.main-mainbox { position: absolute; top: 58px; right: 0px; left: 181px; bottom: 0px; background-color: #FBFBFB; }
+
+/* line 4, D:/workspace/xrzn-admin/scss/_style.scss */
+.main-cont { position: absolute; top: 10px; left: 10px; right: 0px; bottom: 0px; border: 1px solid #ddd; border-bottom: 0px; border-right: 0px; background-color: #fff; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_style.scss */
+.main-header a { color: #ccc; line-height: 55px; }
+
+/* line 9, D:/workspace/xrzn-admin/scss/_style.scss */
+.main-header a:hover { color: #fff; }
+
+/* line 10, D:/workspace/xrzn-admin/scss/_style.scss */
+.logo { float: left; padding: 10px 0 0 10px; }
+
+/* line 11, D:/workspace/xrzn-admin/scss/_style.scss */
+.headQuick { float: right; padding-right: 10px; font-size: 14px; }
+
+/* line 13, D:/workspace/xrzn-admin/scss/_style.scss */
+.headQuick span, .headQuick a { margin: 0 10px; }
+/* line 14, D:/workspace/xrzn-admin/scss/_style.scss */
+.headQuick .em-userName { color: #FF7F00; font-style: normal; }
+
+/* line 17, D:/workspace/xrzn-admin/scss/_style.scss */
+.icon15 { margin: 0 3px; display: -moz-inline-stack; display: inline-block; *display: inline; *zoom: 1; width: 15px; height: 15px; }
+
+/* line 18, D:/workspace/xrzn-admin/scss/_style.scss */
+.icon15 img { vertical-align: middle; }
+
+/* line 19, D:/workspace/xrzn-admin/scss/_style.scss */
+.ul-sidenav { position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; overflow: auto; }
+/* line 21, D:/workspace/xrzn-admin/scss/_style.scss */
+.ul-sidenav .a-sidenav { display: block; line-height: 45px; padding-left: 15px; font-size: 14px; border-bottom: 1px solid #f5f5f5; }
+/* line 24, D:/workspace/xrzn-admin/scss/_style.scss */
+.ul-sidenav .li-sidenav-now .a-sidenav, .ul-sidenav .a-sidenav:hover { background-color: #FFFBF7; }
+/* line 25, D:/workspace/xrzn-admin/scss/_style.scss */
+.ul-sidenav .ul-sidesub { background-color: #f5f5f5; border-left: 3px solid #EA7105; display: none; }
+/* line 26, D:/workspace/xrzn-admin/scss/_style.scss */
+.ul-sidenav .ul-sidesub-now { display: block; }
+/* line 28, D:/workspace/xrzn-admin/scss/_style.scss */
+.ul-sidenav .a-sidesub { display: block; line-height: 20px; font-size: 14px; padding: 5px 5px 5px 33px; }
+/* line 29, D:/workspace/xrzn-admin/scss/_style.scss */
+.ul-sidenav .li-sidesub-now .a-sidesub, .ul-sidenav .a-sidesub:hover, .ul-sidenav .sideSubNow { background-color: #e8e8e8; }
+
+/* line 33, D:/workspace/xrzn-admin/scss/_style.scss */
+.main-conthead { height: 40px; line-height: 40px; background-color: #F7F7F7; border-bottom: 1px solid #eee; }
+/* line 35, D:/workspace/xrzn-admin/scss/_style.scss */
+.main-conthead .s-conttitle { position: relative; float: left; padding: 0 40px; border-right: 1px solid #e5e5e5; font-size: 14px; cursor: hand; cursor: pointer; }
+/* line 37, D:/workspace/xrzn-admin/scss/_style.scss */
+.main-conthead .s-conttitle:hover .em-close { display: block; }
+/* line 39, D:/workspace/xrzn-admin/scss/_style.scss */
+.main-conthead .s-conttitle-now { top: 1px; height: 40px; line-height: 38px; background-color: #fff; font-weight: bold; color: #2275C9; }
+/* line 47, D:/workspace/xrzn-admin/scss/_style.scss */
+.main-conthead .em-conttitle { font-style: normal; }
+/* line 48, D:/workspace/xrzn-admin/scss/_style.scss */
+.main-conthead .em-close { display: none; position: absolute; top: 3px; right: 3px; width: 15px; height: 15px; line-height: 13px; font-size: 10px; text-align: center; font-style: normal; cursor: hand; cursor: pointer; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; color: #86929D; font-weight: bold; }
+/* line 50, D:/workspace/xrzn-admin/scss/_style.scss */
+.main-conthead .em-close:hover { color: #fff; background-color: #D44646; }
+
+/* line 53, D:/workspace/xrzn-admin/scss/_style.scss */
+.main-iframebox { position: absolute; top: 41px; left: 0px; right: 0px; bottom: 0px; }
+
+/* line 54, D:/workspace/xrzn-admin/scss/_style.scss */
+.iframeTabBox { position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; overflow: hidden; }
+
+/* line 56, D:/workspace/xrzn-admin/scss/_style.scss */
+.headTools { height: 50px; }
+/* line 59, D:/workspace/xrzn-admin/scss/_style.scss */
+.headTools .toolsBox { float: left; }
+/* line 60, D:/workspace/xrzn-admin/scss/_style.scss */
+.headTools .gridSearch { float: right; }
+
+/* line 62, D:/workspace/xrzn-admin/scss/_style.scss */
+.moreTools { background-color: #FFF6ED; padding: 10px; }
+
+/* line 68, D:/workspace/xrzn-admin/scss/_style.scss */
+.panel-body { border: 0px; overflow: visible; }
+
+/* line 69, D:/workspace/xrzn-admin/scss/_style.scss */
+.datagrid .panel-body { padding: 0px; line-height: 1.4em; }
+
+/* line 70, D:/workspace/xrzn-admin/scss/_style.scss */
+.panel-header .panel-title { font-size: 12px; }
+
+/* line 71, D:/workspace/xrzn-admin/scss/_style.scss */
+.datagrid { border: solid 1px #D4D4D4; margin-left: -1px; }
+
+/* line 72, D:/workspace/xrzn-admin/scss/_style.scss */
+.datagrid-header-check, .datagrid-cell-check { height: 35px; line-height: 35px; }
+
+/* line 73, D:/workspace/xrzn-admin/scss/_style.scss */
+.datagrid-header-check input, .datagrid-cell-check input { vertical-align: middle; }
+
+/* so-popbox */
+/* line 2, D:/workspace/xrzn-admin/scss/_pop.scss */
+.so-popbox .s-sopop-close, a.a-sopop-btn, span.s-sopop-btn, .s-treeClose, .s-dropClose, .s-break-close, .s-single-close, .s-iiconClose { background: url(../images/sobox/icon-sobox.png) no-repeat; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_pop.scss */
+.so-openmask { position: fixed; _position: absolute; top: -2px; left: 0px; width: 100%; height: 0px; background: #000; filter: alpha(opacity=40); opacity: 0.4; z-index: 1100; }
+
+/* line 4, D:/workspace/xrzn-admin/scss/_pop.scss */
+.so-popbox { background: #fff; text-align: left; z-index: 1120; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; box-shadow: 0px 0px 6px #555; -webkit-box-shadow: 0px 0px 6px #555; -moz-box-shadow: 0px 0px 6px #555; }
+
+/* line 5, D:/workspace/xrzn-admin/scss/_pop.scss */
+.h2-sopop { height: 27px; line-height: 26px; background: #f6f6f6; padding-left: 15px; font-weight: bold; -moz-border-radius: 6px 6px 0 0; -webkit-border-radius: 6px 6px 0 0; border-radius: 6px 6px 0 0; border-bottom: 1px solid #dbdbdb; }
+
+/* line 6, D:/workspace/xrzn-admin/scss/_pop.scss */
+.h2-sopop-move { cursor: move; }
+
+/* line 7, D:/workspace/xrzn-admin/scss/_pop.scss */
+.so-popbox .s-sopop-close, .s-treeClose, .s-dropClose, .s-break-close, .s-single-close, .s-iiconClose { position: absolute; top: 2px; right: 2px; width: 25px; height: 25px; background-position: -145px 0; text-indent: -999em; overflow: hidden; cursor: hand; cursor: pointer; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_pop.scss */
+.so-popbox .s-sopop-close:hover, .s-treeClose:hover, .s-dropClose:hover, .s-break-close:hover, .s-single-close:hover, .s-iiconClose:hover { background-position: -120px 0; }
+
+/* line 9, D:/workspace/xrzn-admin/scss/_pop.scss */
+.so-popbox .s-sopop-out-close { top: -12px; right: -12px; background-position: 0 0; }
+
+/* line 10, D:/workspace/xrzn-admin/scss/_pop.scss */
+.so-popbox .s-sopop-out-close:hover { background-position: 0 0; }
+
+/* line 11, D:/workspace/xrzn-admin/scss/_pop.scss */
+.so-popbox-cont { padding: 15px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+
+/* line 12, D:/workspace/xrzn-admin/scss/_pop.scss */
+.p-so-popBtn { text-align: center; padding: 5px 0 15px; }
+
+/* line 13, D:/workspace/xrzn-admin/scss/_pop.scss */
+.so-popAlert .so-popbox-cont { padding: 15px 15px 10px 15px; }
+
+/* line 14, D:/workspace/xrzn-admin/scss/_pop.scss */
+.so-popConfirm .so-popbox-cont { padding: 30px 20px 15px 80px; background: url(../images/sobox/icon-tip.png) no-repeat 45px 28px; }
+
+/* so-popConfirm */
+/* line 15, D:/workspace/xrzn-admin/scss/_pop.scss */
+.so-popHelp .so-popbox-cont { padding: 20px 20px 20px 85px; background: url(../images/sobox/icon-tip.png) no-repeat 50px -484px; }
+
+/* so-popHelp */
+/* line 16, D:/workspace/xrzn-admin/scss/_pop.scss */
+.so-popSuccess .so-popbox-cont { padding: 20px 20px 20px 85px; background: url(../images/sobox/icon-tip.png) no-repeat 50px -984px; }
+
+/* so-popSuccess */
+/* line 17, D:/workspace/xrzn-admin/scss/_pop.scss */
+.so-popError .so-popbox-cont { padding: 20px 20px 5px 85px; background: url(../images/sobox/icon-tip.png) no-repeat 50px -1474px; }
+
+/* so-popError */
+/* line 18, D:/workspace/xrzn-admin/scss/_pop.scss */
+.so-popAlert .p-so-popBtn { padding: 5px 0 15px; }
+
+/* line 19, D:/workspace/xrzn-admin/scss/_pop.scss */
+.so-loading, .so-ajaxLoading, .so-ajaxSuccess { border: 0px solid #fff; box-shadow: 1px 1px 1px #666; -webkit-box-shadow: 1px 1px 1px #666; -moz-box-shadow: 1px 1px 1px #666; font-size: 12px; }
+
+/* line 20, D:/workspace/xrzn-admin/scss/_pop.scss */
+.so-loading .so-popbox-cont { padding: 16px 20px; text-align: center; background: #111 url(../images/sobox/loading.gif) no-repeat center 50%; }
+
+/* line 21, D:/workspace/xrzn-admin/scss/_pop.scss */
+.so-loading .s-sopop-close, .so-ajaxLoading .s-sopop-close, .so-ajaxSuccess .s-sopop-close { display: none; }
+
+/* line 22, D:/workspace/xrzn-admin/scss/_pop.scss */
+.so-ajaxLoading .so-popbox-cont { padding: 12px 0 12px 42px; background: #f6f6f6 url(../images/sobox/loading.gif) no-repeat 16px 54%; color: #0b67ac; }
+
+/* line 23, D:/workspace/xrzn-admin/scss/_pop.scss */
+.so-ajaxSuccess .so-popbox-cont { padding: 12px 0 12px 42px; background: #f6f6f6 url(../images/sobox/icon-tip.png) no-repeat 16px -2488px; color: #177300; }
+
+/* line 24, D:/workspace/xrzn-admin/scss/_pop.scss */
+a.a-sopop-btn { display: -moz-inline-stack; display: inline-block; *display: inline; *zoom: 1; margin: 0 3px; padding: 0 0 0 15px; color: #fff; background-color: #ec5656; background-position: 0 -40px; }
+
+/* line 25, D:/workspace/xrzn-admin/scss/_pop.scss */
+span.s-sopop-btn { display: -moz-inline-stack; display: inline-block; *display: inline; *zoom: 1; background-position: 100% -40px; height: 25px; line-height: 23px; padding: 0 15px 0 0; }
+
+/* line 26, D:/workspace/xrzn-admin/scss/_pop.scss */
+a.a-sopop-cancel { background-position: 0 -70px; color: #444; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_pop.scss */
+a.a-sopop-cancel span.s-sopop-btn { background-position: 100% -70px; }
+
+/* line 28, D:/workspace/xrzn-admin/scss/_pop.scss */
+.so-popTip, .so-popTip-1 { border: 1px solid #f4b23f; background: #fff5d0; box-shadow: 1px 1px 2px #bbb; -webkit-box-shadow: 1px 1px 2px #bbb; -moz-box-shadow: 1px 1px 2px #bbb; }
+
+/* line 29, D:/workspace/xrzn-admin/scss/_pop.scss */
+.so-popTip-1 .so-popbox-cont { padding: 8px 24px 8px 8px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_pop.scss */
+.so-popTip-2 { border: 0px solid #ff812d; background: #eee7df; color: #970000; }
+
+/* line 31, D:/workspace/xrzn-admin/scss/_pop.scss */
+.so-popTip-2 .s-sopop-close { display: none; }
+
+/* line 32, D:/workspace/xrzn-admin/scss/_pop.scss */
+.p-popTip { padding: 2px 0 2px 16px; background: url(../images/i-tip.png) no-repeat; }
+
+/* line 33, D:/workspace/xrzn-admin/scss/_pop.scss */
+.p-popTip-warning { color: #c00; background-position: 0 4px; }
+
+/* line 34, D:/workspace/xrzn-admin/scss/_pop.scss */
+.p-popTip-normal { background-position: 0 -95px; }
+
+/* line 35, D:/workspace/xrzn-admin/scss/_pop.scss */
+.p-popTip-grey, .p-popTip-off { color: #888; background-position: 0 -196px; }
+
+/* line 36, D:/workspace/xrzn-admin/scss/_pop.scss */
+.p-popTip-success, .p-popTip-on { color: #447131; background-position: 0 -295px; }
+
+/* line 37, D:/workspace/xrzn-admin/scss/_pop.scss */
+.tip-trackResult { overflow: hidden; }
+
+/* line 38, D:/workspace/xrzn-admin/scss/_pop.scss */
+.so-popSide-r { border: 0px; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; box-shadow: 0px 0px 8px #999; -webkit-box-shadow: 0px 0px 8px #999; -moz-box-shadow: 0px 0px 8px #999; }
+
+/* line 39, D:/workspace/xrzn-admin/scss/_pop.scss */
+.so-popSide-r .s-sopop-close, .so-popSide-r .s-sopop-close:hover { top: 15px; right: -11px; width: 11px; height: 19px; background: url(../images/sobox/i-arrow-r.png) no-repeat 0 0; }
+
+/* line 40, D:/workspace/xrzn-admin/scss/_pop.scss */
+.so-popSide-r .so-popbox-cont { padding: 12px; }
+
+/* line 41, D:/workspace/xrzn-admin/scss/_pop.scss */
+.popTreeCarInfo { line-height: 1.4em; min-height: 30px; }
+
+/* line 42, D:/workspace/xrzn-admin/scss/_pop.scss */
+.popTreeCarInfo .s-title { color: #888; margin-right: 5px; }
+
+/* line 44, D:/workspace/xrzn-admin/scss/_pop.scss */
+.pop-watchMode input, .pop-watchMode textarea, .pop-watchMode .combo { border: 1px solid #ddd; background-color: #eee; }
+
+/* line 45, D:/workspace/xrzn-admin/scss/_pop.scss */
+.form-watchMode input, .form-watchMode textarea, .form-watchMode .combo { border: 1px solid #fff; background-color: #fff; }
+
+/* line 46, D:/workspace/xrzn-admin/scss/_pop.scss */
+.pop-watchMode .em-tip { display: none; }
+
+/* line 47, D:/workspace/xrzn-admin/scss/_pop.scss */
+.pop-watchMode .p-formbtn { display: none; }
+
+/* line 48, D:/workspace/xrzn-admin/scss/_pop.scss */
+.pop-watchMode .combo-arrow { display: none; }
+
+/* line 1, D:/workspace/xrzn-admin/scss/_form.scss */
+.h3-form { margin: 0 0 20px; height: 36px; line-height: 36px; padding: 0 0 0 30px; background: url(../images/icon15/outline.png) 12px 10px no-repeat; border-bottom: 1px solid #ddd; }
+
+/* line 2, D:/workspace/xrzn-admin/scss/_form.scss */
+.p-item { padding: 0 0 8px; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_form.scss */
+.lab-item { float: left; width: 25%; min-width: 76px; margin-right: 2px; text-align: right; line-height: 30px; }
+
+/* line 4, D:/workspace/xrzn-admin/scss/_form.scss */
+.txt { background-color: #fff; color: #555; width: 180px; padding: 4px 6px; height: 22px; line-height: 22px; border: 1px solid #d9d9d9; box-shadow: 1px 1px 1px #eee inset; -webkit-box-shadow: 1px 1px 1px #eee inset; -moz-box-shadow: 1px 1px 1px #eee inset; vertical-align: middle; }
+
+/* line 5, D:/workspace/xrzn-admin/scss/_form.scss */
+.txt:focus { border-color: #78A3F1; background-color: #F4FBFF; box-shadow: 1px 1px 1px #C1D5F9 inset; -webkit-box-shadow: 1px 1px 1px #C1D5F9 inset; -moz-box-shadow: 1px 1px 1px #C1D5F9 inset; }
+
+/* line 6, D:/workspace/xrzn-admin/scss/_form.scss */
+.drop { height: 32px; padding: 0 2px 0 6px; vertical-align: middle; }
+
+/* line 7, D:/workspace/xrzn-admin/scss/_form.scss */
+.btn { background-color: #3D8AC9; border: 0px; outline: none; color: #fff; padding: 0 20px; height: 32px; line-height: 30px; cursor: hand; cursor: pointer; font-size: 1.18em; -webkit-transition: all 0.4s ease-in-out 0s; -moz-transition: all 0.4s ease-in-out 0s; -o-transition: all 0.4s ease-in-out 0s; transition: all 0.4s ease-in-out 0s; -moz-border-radius: 1px; -webkit-border-radius: 1px; border-radius: 1px; vertical-align: middle; }
+/* line 9, D:/workspace/xrzn-admin/scss/_form.scss */
+.btn:hover { background-color: #409EE3; box-shadow: 1px 1px 2px #ccc outset; -webkit-box-shadow: 1px 1px 2px #ccc outset; -moz-box-shadow: 1px 1px 2px #ccc outset; }
+
+/* line 11, D:/workspace/xrzn-admin/scss/_form.scss */
+.btn-sm { height: 28px; line-height: 28px; font-size: 1em; }
+
+/* line 12, D:/workspace/xrzn-admin/scss/_form.scss */
+.btn-group .btn { float: left; -moz-border-radius: 0px; -webkit-border-radius: 0px; border-radius: 0px; border-right: 1px solid #ddd; border-left: 1px solid #f3f3f3; padding: 0 12px; }
+
+/* line 13, D:/workspace/xrzn-admin/scss/_form.scss */
+.btn-group .btn:first-child { -moz-border-radius: 2px 0 0 2px; -webkit-border-radius: 2px 0 0 2px; border-radius: 2px 0 0 2px; border-left: 0px; }
+
+/* line 14, D:/workspace/xrzn-admin/scss/_form.scss */
+.btn-group .btn:last-child { -moz-border-radius: 0px 2px 2px 0px; -webkit-border-radius: 0px 2px 2px 0px; border-radius: 0px 2px 2px 0px; border-right: 0px; }
+
+/* line 15, D:/workspace/xrzn-admin/scss/_form.scss */
+.btn-showMoreSearch { padding: 0 5px 0 10px; }
+
+/* line 17, D:/workspace/xrzn-admin/scss/_form.scss */
+.txt-err { border-color: #E67E7B; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+
+/* line 22, D:/workspace/xrzn-admin/scss/_form.scss */
+.txt-err:focus { border-color: #E67E7B; background-color: #FFFBFB; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483; }
+
+/* line 28, D:/workspace/xrzn-admin/scss/_form.scss */
+.em-errMes { color: #c00; font-style: normal; line-height: 30px; vertical-align: middle; margin-left: 6px; }
+
+/* line 29, D:/workspace/xrzn-admin/scss/_form.scss */
+.em-errMes:before { font-size: 16px; vertical-align: middle; }
+
+/* base  */
+/* line 2, D:/workspace/xrzn-admin/scss/_rule.scss */
+.red, a.red { color: #d92920; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_rule.scss */
+.grey, a.grey { color: #888; }
+
+/* line 4, D:/workspace/xrzn-admin/scss/_rule.scss */
+.green, a.green { color: green; }
+
+/* line 5, D:/workspace/xrzn-admin/scss/_rule.scss */
+.blue, a.blue { color: #003c9e; }
+
+/* line 6, D:/workspace/xrzn-admin/scss/_rule.scss */
+.orange, a.orange { color: #ea5e00; }
+
+/* line 7, D:/workspace/xrzn-admin/scss/_rule.scss */
+.yellow, a.yellow { color: yellow; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_rule.scss */
+.em-rq { color: #d92920; font-family: "瀹嬩綋"; margin: 0 2px; }
+
+/* line 9, D:/workspace/xrzn-admin/scss/_rule.scss */
+a.green:hover, a.blue:hover, a.orange:hover, a.yellow:hover { text-decoration: underline; }
+
+/* line 11, D:/workspace/xrzn-admin/scss/_rule.scss */
+.bg-grey { background-color: #e9e9e9; color: #666; }
+/* line 13, D:/workspace/xrzn-admin/scss/_rule.scss */
+.bg-grey:hover { background-color: #fafafa; color: #111; }
+
+/* line 15, D:/workspace/xrzn-admin/scss/_rule.scss */
+.bg-info { background-color: #00a1cb; color: #fff; }
+/* line 17, D:/workspace/xrzn-admin/scss/_rule.scss */
+.bg-info:hover { background-color: #00b5e5; }
+
+/* line 19, D:/workspace/xrzn-admin/scss/_rule.scss */
+.bg-success { background-color: #419641; color: #fff; }
+/* line 21, D:/workspace/xrzn-admin/scss/_rule.scss */
+.bg-success:hover { background-color: #5cb85c; }
+
+/* line 23, D:/workspace/xrzn-admin/scss/_rule.scss */
+.bg-warning { background-color: #f18d05; color: #fff; }
+/* line 25, D:/workspace/xrzn-admin/scss/_rule.scss */
+.bg-warning:hover { background-color: #F07800; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_rule.scss */
+.bg-danger { background-color: #c12e2a; color: #fff; }
+/* line 29, D:/workspace/xrzn-admin/scss/_rule.scss */
+.bg-danger:hover { background-color: #d9534f; }
+
+/* line 32, D:/workspace/xrzn-admin/scss/_rule.scss */
+.bd-grey { background-color: #eee; border: 1px solid #ccc; color: #555; }
+/* line 34, D:/workspace/xrzn-admin/scss/_rule.scss */
+.bd-grey:hover { background-color: #fafafa; border: 1px solid #ddd; color: #111; }
+
+/* line 36, D:/workspace/xrzn-admin/scss/_rule.scss */
+.bd-info { background-color: #F2F9FD; border: 1px solid #99CFEC; color: #0097BD; }
+/* line 38, D:/workspace/xrzn-admin/scss/_rule.scss */
+.bd-info:hover { background-color: #F2F9FD; border: 1px solid #B0D9F0; color: #0097BD; }
+
+/* line 40, D:/workspace/xrzn-admin/scss/_rule.scss */
+.bd-success { background-color: #FBFFF0; border: 1px solid #88C839; color: #70A62D; }
+/* line 42, D:/workspace/xrzn-admin/scss/_rule.scss */
+.bd-success:hover { background-color: #FDFEF8; border: 1px solid #AEDA78; color: #70A62D; }
+
+/* line 44, D:/workspace/xrzn-admin/scss/_rule.scss */
+.bd-warning { background-color: #FFFCF7; border: 1px solid #FF993E; color: #F47E13; }
+/* line 46, D:/workspace/xrzn-admin/scss/_rule.scss */
+.bd-warning:hover { background-color: #FFFCF7; border: 1px solid #FFB46F; color: #F47E13; }
+
+/* line 48, D:/workspace/xrzn-admin/scss/_rule.scss */
+.bd-danger { background-color: #FFFBFB; border: 1px solid #FC6B6B; color: #c30; }
+/* line 50, D:/workspace/xrzn-admin/scss/_rule.scss */
+.bd-danger:hover { background-color: #FFFBFB; border: 1px solid #FB8888; color: #c30; }
+
+/* line 53, D:/workspace/xrzn-admin/scss/_rule.scss */
+.s-icon { display: -moz-inline-stack; display: inline-block; *display: inline; *zoom: 1; width: 15px; height: 15px; vertical-align: middle; margin: -3px 2px 0 0; }
+
+/* line 54, D:/workspace/xrzn-admin/scss/_rule.scss */
+.icon-plus { background: url(../images/icon15/hospital.png) no-repeat; }
+
+/* line 55, D:/workspace/xrzn-admin/scss/_rule.scss */
+.icon-pencil { background: url(../images/icon15/edit.png) no-repeat; }
+
+/* line 56, D:/workspace/xrzn-admin/scss/_rule.scss */
+.icon-remove { background: url(../images/icon15/cancel.png) no-repeat; }
+
+/* line 57, D:/workspace/xrzn-admin/scss/_rule.scss */
+.icon-refresh { background: url(../images/icon15/reload.png) no-repeat; }
+
+/* line 58, D:/workspace/xrzn-admin/scss/_rule.scss */
+.icon-search { background: url(../images/icon15/search.png) no-repeat; }
+
+/* line 59, D:/workspace/xrzn-admin/scss/_rule.scss */
+.icon-down { background: url(../images/icon15/down4.png) no-repeat; }
+
+/* line 60, D:/workspace/xrzn-admin/scss/_rule.scss */
+.icon-down-w { background: url(../images/icon15/white/down4.png) no-repeat; }
+
+/* line 63, D:/workspace/xrzn-admin/scss/_rule.scss */
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+/* line 71, D:/workspace/xrzn-admin/scss/_rule.scss */
+.clearfix { display: inline-table; }
+
+/* Hides from IE-mac \*/
+/* line 73, D:/workspace/xrzn-admin/scss/_rule.scss */
+* html .clearfix { height: 1%; }
+
+/* line 74, D:/workspace/xrzn-admin/scss/_rule.scss */
+.clearfix { display: block; }
+
+/* line 76, D:/workspace/xrzn-admin/scss/_rule.scss */
+.bgfff { background-color: #fff; }
+
+/* line 77, D:/workspace/xrzn-admin/scss/_rule.scss */
+.bgeee { background-color: #eee; }
+
+/* line 78, D:/workspace/xrzn-admin/scss/_rule.scss */
+.bgc-f3 { background-color: #f3f3f3; }
+
+/* line 79, D:/workspace/xrzn-admin/scss/_rule.scss */
+.bgc-fffbf4 { background-color: #fffbf4; }
+
+/* line 80, D:/workspace/xrzn-admin/scss/_rule.scss */
+.bor-rad-1 { -moz-border-radius: 1px; -webkit-border-radius: 1px; border-radius: 1px; }
+
+/* line 81, D:/workspace/xrzn-admin/scss/_rule.scss */
+.bor-rad-2 { -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
+
+/* line 82, D:/workspace/xrzn-admin/scss/_rule.scss */
+.bor-rad-3 { -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+
+/* line 83, D:/workspace/xrzn-admin/scss/_rule.scss */
+.bor-rad, .bor-rad-4 { -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
+
+/* line 84, D:/workspace/xrzn-admin/scss/_rule.scss */
+.bor-rad-6 { -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; }
+
+/* line 85, D:/workspace/xrzn-admin/scss/_rule.scss */
+.bor-rad-8 { -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; }
+
+/* line 87, D:/workspace/xrzn-admin/scss/_rule.scss */
+.none { display: none; }
+
+/* line 88, D:/workspace/xrzn-admin/scss/_rule.scss */
+.hidden { visibility: hidden; }
+
+/* line 89, D:/workspace/xrzn-admin/scss/_rule.scss */
+.fl { float: left; }
+
+/* line 90, D:/workspace/xrzn-admin/scss/_rule.scss */
+.fr { float: right; }
+
+/* line 91, D:/workspace/xrzn-admin/scss/_rule.scss */
+.left { text-align: left; }
+
+/* line 92, D:/workspace/xrzn-admin/scss/_rule.scss */
+.right { text-align: right; }
+
+/* line 93, D:/workspace/xrzn-admin/scss/_rule.scss */
+.center { text-align: center; }
+
+/* line 94, D:/workspace/xrzn-admin/scss/_rule.scss */
+.por { position: relative; }
+
+/* line 95, D:/workspace/xrzn-admin/scss/_rule.scss */
+.poa { position: absolute; }
+
+/* line 96, D:/workspace/xrzn-admin/scss/_rule.scss */
+.flowauto { overflow: auto; }
+
+/* line 97, D:/workspace/xrzn-admin/scss/_rule.scss */
+.marauto { margin-left: auto; margin-right: auto; }
+
+/* line 98, D:/workspace/xrzn-admin/scss/_rule.scss */
+.vam { vertical-align: middle; }
+
+/* line 99, D:/workspace/xrzn-admin/scss/_rule.scss */
+.curhand { cursor: hand; cursor: pointer; }
+
+/* grid */
+/* line 103, D:/workspace/xrzn-admin/scss/_rule.scss */
+.grid { /*max-width:1220px;*/ margin: 0 auto; }
+
+/* line 106, D:/workspace/xrzn-admin/scss/_rule.scss */
+.grid:after { clear: both; content: ' '; display: block; font-size: 0; line-height: 0; visibility: hidden; width: 0; height: 0; }
+
+/* line 107, D:/workspace/xrzn-admin/scss/_rule.scss */
+* html .grid, *:first-child + html .grid { zoom: 1; }
+
+/* line 109, D:/workspace/xrzn-admin/scss/_rule.scss */
+.grid.flex { width: 100%; max-width: 100%; padding: 0 2%; padding: 2em; }
+
+/* line 110, D:/workspace/xrzn-admin/scss/_rule.scss */
+.row { display: block; overflow: hidden; clear: both; }
+
+/* line 112, D:/workspace/xrzn-admin/scss/_rule.scss */
+*[class*="col-"].alpha { margin-left: 0; }
+
+/* line 113, D:/workspace/xrzn-admin/scss/_rule.scss */
+*[class*="col-"].omega { margin-right: 0; }
+
+/* line 115, D:/workspace/xrzn-admin/scss/_rule.scss */
+.col-1 { width: 6.6666666666667%; }
+
+/* line 116, D:/workspace/xrzn-admin/scss/_rule.scss */
+.col-2 { width: 15%; }
+
+/* line 117, D:/workspace/xrzn-admin/scss/_rule.scss */
+.col-3 { width: 23.333333333333%; }
+
+/* line 118, D:/workspace/xrzn-admin/scss/_rule.scss */
+.col-4 { width: 31.666666666667%; }
+
+/* line 119, D:/workspace/xrzn-admin/scss/_rule.scss */
+.col-5 { width: 40%; }
+
+/* line 120, D:/workspace/xrzn-admin/scss/_rule.scss */
+.col-6 { width: 48.333333333333%; }
+
+/* line 121, D:/workspace/xrzn-admin/scss/_rule.scss */
+.col-7 { width: 56.666666666667%; }
+
+/* line 122, D:/workspace/xrzn-admin/scss/_rule.scss */
+.col-8 { width: 65%; }
+
+/* line 123, D:/workspace/xrzn-admin/scss/_rule.scss */
+.col-9 { width: 73.333333333333%; }
+
+/* line 124, D:/workspace/xrzn-admin/scss/_rule.scss */
+.col-10 { width: 81.666666666667%; }
+
+/* line 125, D:/workspace/xrzn-admin/scss/_rule.scss */
+.col-11 { width: 90%; }
+
+/* line 126, D:/workspace/xrzn-admin/scss/_rule.scss */
+.col-12 { width: 98.333333333333%; }
+
+/* line 128, D:/workspace/xrzn-admin/scss/_rule.scss */
+*[class*="col-"] { margin-left: 0.83333333333333%; margin-right: 0.83333333333333%; float: left; display: block; }
+
+/* line 135, D:/workspace/xrzn-admin/scss/_rule.scss */
+.grid img { max-width: 100%; height: auto; }
+
+/* Viewable Grids
+To view your grids, add the class .visible to any grid container.
+This will add a background color so you can see the layout of your grids.
+*/
+/* line 144, D:/workspace/xrzn-admin/scss/_rule.scss */
+*[class*="col-"].visible { background: #eee; border: 1px dotted #ccc; }
+
+/*---------------------------------
+1280-1024 	- desktop (default grid)
+1024-768 	- tablet landscape
+768-480 	- tablet
+480-less 	- phone landscape & smaller
+-----------------------------------*/
+@media all and (min-width: 1024px) and (max-width: 1280px) { /* line 154, D:/workspace/xrzn-admin/scss/_rule.scss */
+  .show-desktop { display: block; }
+  /* line 155, D:/workspace/xrzn-admin/scss/_rule.scss */
+  .hide-desktop { display: none; }
+  /* line 156, D:/workspace/xrzn-admin/scss/_rule.scss */
+  .show-tablet { display: none; }
+  /* line 157, D:/workspace/xrzn-admin/scss/_rule.scss */
+  .hide-tablet { display: block; }
+  /* line 158, D:/workspace/xrzn-admin/scss/_rule.scss */
+  .show-phone { display: none; }
+  /* line 159, D:/workspace/xrzn-admin/scss/_rule.scss */
+  .hide-phone { display: block; } }
+@media all and (min-width: 768px) and (max-width: 1024px) { /* line 165, D:/workspace/xrzn-admin/scss/_rule.scss */
+  .show-desktop { display: none; }
+  /* line 166, D:/workspace/xrzn-admin/scss/_rule.scss */
+  .hide-desktop { display: block; }
+  /* line 167, D:/workspace/xrzn-admin/scss/_rule.scss */
+  .show-tablet { display: block; }
+  /* line 168, D:/workspace/xrzn-admin/scss/_rule.scss */
+  .hide-tablet { display: none; }
+  /* line 169, D:/workspace/xrzn-admin/scss/_rule.scss */
+  .show-phone { display: none; }
+  /* line 170, D:/workspace/xrzn-admin/scss/_rule.scss */
+  .hide-phone { display: block; } }
+@media all and (min-width: 480px) and (max-width: 768px) { /* line 176, D:/workspace/xrzn-admin/scss/_rule.scss */
+  .grid *[class*="col-"] { float: none; width: auto; clear: both; display: block; }
+  /* line 177, D:/workspace/xrzn-admin/scss/_rule.scss */
+  .grid * { -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */ -moz-box-sizing: border-box; /* Firefox, other Gecko */ box-sizing: border-box; /* Opera/IE 8+ */ }
+  /* columns inside of columns */
+  /* line 184, D:/workspace/xrzn-admin/scss/_rule.scss */
+  .grid *[class*="col-"] [class*="col-"] { margin-left: 0; margin-right: 0; width: 100%; }
+  /* line 186, D:/workspace/xrzn-admin/scss/_rule.scss */
+  .grid { max-width: 480px; }
+  /* line 187, D:/workspace/xrzn-admin/scss/_rule.scss */
+  .show-desktop { display: none; }
+  /* line 188, D:/workspace/xrzn-admin/scss/_rule.scss */
+  .hide-desktop { display: block; }
+  /* line 189, D:/workspace/xrzn-admin/scss/_rule.scss */
+  .show-tablet { display: block; }
+  /* line 190, D:/workspace/xrzn-admin/scss/_rule.scss */
+  .hide-tablet { display: none; }
+  /* line 191, D:/workspace/xrzn-admin/scss/_rule.scss */
+  .show-phone { display: none; }
+  /* line 192, D:/workspace/xrzn-admin/scss/_rule.scss */
+  .hide-phone { display: block; } }
+@media all and (max-width: 480px) { /* line 197, D:/workspace/xrzn-admin/scss/_rule.scss */
+  .grid *[class*="col-"] { float: none; width: auto; clear: both; display: block; }
+  /* columns inside of columns */
+  /* line 205, D:/workspace/xrzn-admin/scss/_rule.scss */
+  .grid *[class*="col-"] [class*="col-"] { margin-left: 0; margin-right: 0; width: 100%; }
+  /* line 211, D:/workspace/xrzn-admin/scss/_rule.scss */
+  .grid { max-width: 100%; /*320*/ }
+  /* line 212, D:/workspace/xrzn-admin/scss/_rule.scss */
+  .show-desktop { display: none; }
+  /* line 213, D:/workspace/xrzn-admin/scss/_rule.scss */
+  .hide-desktop { display: block; }
+  /* line 214, D:/workspace/xrzn-admin/scss/_rule.scss */
+  .show-tablet { display: none; }
+  /* line 215, D:/workspace/xrzn-admin/scss/_rule.scss */
+  .hide-tablet { display: block; }
+  /* line 216, D:/workspace/xrzn-admin/scss/_rule.scss */
+  .show-phone { display: block; }
+  /* line 217, D:/workspace/xrzn-admin/scss/_rule.scss */
+  .hide-phone { display: none; } }
+/* font-size */
+/* line 3, D:/workspace/xrzn-admin/scss/_modify.scss */
+.fs12 { font-size: 12px; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_modify.scss */
+.fs13 { font-size: 13px; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_modify.scss */
+.fs14 { font-size: 14px; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_modify.scss */
+.fs15 { font-size: 15px; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_modify.scss */
+.fs16 { font-size: 16px; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_modify.scss */
+.fs17 { font-size: 17px; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_modify.scss */
+.fs18 { font-size: 18px; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_modify.scss */
+.fs19 { font-size: 19px; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_modify.scss */
+.fs20 { font-size: 20px; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_modify.scss */
+.fs21 { font-size: 21px; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_modify.scss */
+.fs22 { font-size: 22px; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_modify.scss */
+.fs23 { font-size: 23px; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_modify.scss */
+.fs24 { font-size: 24px; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_modify.scss */
+.fs25 { font-size: 25px; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_modify.scss */
+.fs26 { font-size: 26px; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_modify.scss */
+.fs27 { font-size: 27px; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_modify.scss */
+.fs28 { font-size: 28px; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_modify.scss */
+.fs29 { font-size: 29px; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_modify.scss */
+.fs30 { font-size: 30px; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_modify.scss */
+.fs31 { font-size: 31px; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_modify.scss */
+.fs32 { font-size: 32px; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_modify.scss */
+.fs33 { font-size: 33px; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_modify.scss */
+.fs34 { font-size: 34px; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_modify.scss */
+.fs35 { font-size: 35px; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_modify.scss */
+.fs36 { font-size: 36px; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_modify.scss */
+.fs37 { font-size: 37px; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_modify.scss */
+.fs38 { font-size: 38px; }
+
+/* line 3, D:/workspace/xrzn-admin/scss/_modify.scss */
+.fs39 { font-size: 39px; }
+
+/* width */
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w5 { width: 5px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w10 { width: 10px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w15 { width: 15px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w20 { width: 20px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w25 { width: 25px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w30 { width: 30px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w35 { width: 35px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w40 { width: 40px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w45 { width: 45px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w50 { width: 50px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w55 { width: 55px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w60 { width: 60px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w65 { width: 65px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w70 { width: 70px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w75 { width: 75px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w80 { width: 80px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w85 { width: 85px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w90 { width: 90px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w95 { width: 95px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w100 { width: 100px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w105 { width: 105px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w110 { width: 110px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w115 { width: 115px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w120 { width: 120px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w125 { width: 125px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w130 { width: 130px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w135 { width: 135px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w140 { width: 140px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w145 { width: 145px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w150 { width: 150px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w155 { width: 155px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w160 { width: 160px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w165 { width: 165px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w170 { width: 170px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w175 { width: 175px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w180 { width: 180px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w185 { width: 185px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w190 { width: 190px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w195 { width: 195px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w200 { width: 200px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w205 { width: 205px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w210 { width: 210px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w215 { width: 215px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w220 { width: 220px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w225 { width: 225px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w230 { width: 230px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w235 { width: 235px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w240 { width: 240px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w245 { width: 245px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w250 { width: 250px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w255 { width: 255px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w260 { width: 260px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w265 { width: 265px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w270 { width: 270px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w275 { width: 275px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w280 { width: 280px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w285 { width: 285px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w290 { width: 290px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w295 { width: 295px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w300 { width: 300px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w305 { width: 305px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w310 { width: 310px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w315 { width: 315px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w320 { width: 320px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w325 { width: 325px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w330 { width: 330px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w335 { width: 335px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w340 { width: 340px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w345 { width: 345px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w350 { width: 350px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w355 { width: 355px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w360 { width: 360px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w365 { width: 365px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w370 { width: 370px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w375 { width: 375px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w380 { width: 380px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w385 { width: 385px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w390 { width: 390px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w395 { width: 395px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w400 { width: 400px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w405 { width: 405px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w410 { width: 410px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w415 { width: 415px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w420 { width: 420px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w425 { width: 425px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w430 { width: 430px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w435 { width: 435px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w440 { width: 440px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w445 { width: 445px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w450 { width: 450px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w455 { width: 455px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w460 { width: 460px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w465 { width: 465px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w470 { width: 470px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w475 { width: 475px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w480 { width: 480px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w485 { width: 485px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w490 { width: 490px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w495 { width: 495px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w500 { width: 500px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w505 { width: 505px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w510 { width: 510px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w515 { width: 515px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w520 { width: 520px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w525 { width: 525px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w530 { width: 530px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w535 { width: 535px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w540 { width: 540px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w545 { width: 545px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w550 { width: 550px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w555 { width: 555px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w560 { width: 560px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w565 { width: 565px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w570 { width: 570px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w575 { width: 575px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w580 { width: 580px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w585 { width: 585px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w590 { width: 590px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w595 { width: 595px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w600 { width: 600px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w605 { width: 605px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w610 { width: 610px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w615 { width: 615px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w620 { width: 620px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w625 { width: 625px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w630 { width: 630px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w635 { width: 635px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w640 { width: 640px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w645 { width: 645px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w650 { width: 650px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w655 { width: 655px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w660 { width: 660px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w665 { width: 665px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w670 { width: 670px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w675 { width: 675px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w680 { width: 680px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w685 { width: 685px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w690 { width: 690px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w695 { width: 695px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w700 { width: 700px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w705 { width: 705px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w710 { width: 710px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w715 { width: 715px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w720 { width: 720px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w725 { width: 725px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w730 { width: 730px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w735 { width: 735px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w740 { width: 740px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w745 { width: 745px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w750 { width: 750px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w755 { width: 755px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w760 { width: 760px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w765 { width: 765px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w770 { width: 770px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w775 { width: 775px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w780 { width: 780px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w785 { width: 785px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w790 { width: 790px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w795 { width: 795px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w800 { width: 800px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w805 { width: 805px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w810 { width: 810px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w815 { width: 815px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w820 { width: 820px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w825 { width: 825px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w830 { width: 830px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w835 { width: 835px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w840 { width: 840px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w845 { width: 845px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w850 { width: 850px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w855 { width: 855px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w860 { width: 860px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w865 { width: 865px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w870 { width: 870px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w875 { width: 875px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w880 { width: 880px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w885 { width: 885px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w890 { width: 890px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w895 { width: 895px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w900 { width: 900px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w905 { width: 905px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w910 { width: 910px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w915 { width: 915px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w920 { width: 920px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w925 { width: 925px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w930 { width: 930px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w935 { width: 935px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w940 { width: 940px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w945 { width: 945px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w950 { width: 950px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w955 { width: 955px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w960 { width: 960px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w965 { width: 965px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w970 { width: 970px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w975 { width: 975px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w980 { width: 980px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w985 { width: 985px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w990 { width: 990px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w995 { width: 995px; }
+
+/* line 8, D:/workspace/xrzn-admin/scss/_modify.scss */
+.w1000 { width: 1000px; }
+
+/* width per */
+/* line 13, D:/workspace/xrzn-admin/scss/_modify.scss */
+.wp5 { width: 5%; }
+
+/* line 13, D:/workspace/xrzn-admin/scss/_modify.scss */
+.wp10 { width: 10%; }
+
+/* line 13, D:/workspace/xrzn-admin/scss/_modify.scss */
+.wp15 { width: 15%; }
+
+/* line 13, D:/workspace/xrzn-admin/scss/_modify.scss */
+.wp20 { width: 20%; }
+
+/* line 13, D:/workspace/xrzn-admin/scss/_modify.scss */
+.wp25 { width: 25%; }
+
+/* line 13, D:/workspace/xrzn-admin/scss/_modify.scss */
+.wp30 { width: 30%; }
+
+/* line 13, D:/workspace/xrzn-admin/scss/_modify.scss */
+.wp35 { width: 35%; }
+
+/* line 13, D:/workspace/xrzn-admin/scss/_modify.scss */
+.wp40 { width: 40%; }
+
+/* line 13, D:/workspace/xrzn-admin/scss/_modify.scss */
+.wp45 { width: 45%; }
+
+/* line 13, D:/workspace/xrzn-admin/scss/_modify.scss */
+.wp50 { width: 50%; }
+
+/* line 13, D:/workspace/xrzn-admin/scss/_modify.scss */
+.wp55 { width: 55%; }
+
+/* line 13, D:/workspace/xrzn-admin/scss/_modify.scss */
+.wp60 { width: 60%; }
+
+/* line 13, D:/workspace/xrzn-admin/scss/_modify.scss */
+.wp65 { width: 65%; }
+
+/* line 13, D:/workspace/xrzn-admin/scss/_modify.scss */
+.wp70 { width: 70%; }
+
+/* line 13, D:/workspace/xrzn-admin/scss/_modify.scss */
+.wp75 { width: 75%; }
+
+/* line 13, D:/workspace/xrzn-admin/scss/_modify.scss */
+.wp80 { width: 80%; }
+
+/* line 13, D:/workspace/xrzn-admin/scss/_modify.scss */
+.wp85 { width: 85%; }
+
+/* line 13, D:/workspace/xrzn-admin/scss/_modify.scss */
+.wp90 { width: 90%; }
+
+/* line 13, D:/workspace/xrzn-admin/scss/_modify.scss */
+.wp95 { width: 95%; }
+
+/* line 13, D:/workspace/xrzn-admin/scss/_modify.scss */
+.wp100 { width: 100%; }
+
+/* margin padding*/
+/* line 18, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mar2 { margin: 2px; }
+
+/* line 18, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mar4 { margin: 4px; }
+
+/* line 18, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mar6 { margin: 6px; }
+
+/* line 18, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mar8 { margin: 8px; }
+
+/* line 18, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mar10 { margin: 10px; }
+
+/* line 18, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mar12 { margin: 12px; }
+
+/* line 18, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mar14 { margin: 14px; }
+
+/* line 18, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mar16 { margin: 16px; }
+
+/* line 18, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mar18 { margin: 18px; }
+
+/* line 18, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mar20 { margin: 20px; }
+
+/* line 18, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mar22 { margin: 22px; }
+
+/* line 18, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mar24 { margin: 24px; }
+
+/* line 18, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mar26 { margin: 26px; }
+
+/* line 18, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mar28 { margin: 28px; }
+
+/* line 18, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mar30 { margin: 30px; }
+
+/* line 18, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mar32 { margin: 32px; }
+
+/* line 18, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mar34 { margin: 34px; }
+
+/* line 18, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mar36 { margin: 36px; }
+
+/* line 18, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mar38 { margin: 38px; }
+
+/* line 18, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mar40 { margin: 40px; }
+
+/* line 18, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mar42 { margin: 42px; }
+
+/* line 18, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mar44 { margin: 44px; }
+
+/* line 18, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mar46 { margin: 46px; }
+
+/* line 18, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mar48 { margin: 48px; }
+
+/* line 18, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mar50 { margin: 50px; }
+
+/* line 21, D:/workspace/xrzn-admin/scss/_modify.scss */
+.pad2 { padding: 2px; }
+
+/* line 21, D:/workspace/xrzn-admin/scss/_modify.scss */
+.pad4 { padding: 4px; }
+
+/* line 21, D:/workspace/xrzn-admin/scss/_modify.scss */
+.pad6 { padding: 6px; }
+
+/* line 21, D:/workspace/xrzn-admin/scss/_modify.scss */
+.pad8 { padding: 8px; }
+
+/* line 21, D:/workspace/xrzn-admin/scss/_modify.scss */
+.pad10 { padding: 10px; }
+
+/* line 21, D:/workspace/xrzn-admin/scss/_modify.scss */
+.pad12 { padding: 12px; }
+
+/* line 21, D:/workspace/xrzn-admin/scss/_modify.scss */
+.pad14 { padding: 14px; }
+
+/* line 21, D:/workspace/xrzn-admin/scss/_modify.scss */
+.pad16 { padding: 16px; }
+
+/* line 21, D:/workspace/xrzn-admin/scss/_modify.scss */
+.pad18 { padding: 18px; }
+
+/* line 21, D:/workspace/xrzn-admin/scss/_modify.scss */
+.pad20 { padding: 20px; }
+
+/* line 21, D:/workspace/xrzn-admin/scss/_modify.scss */
+.pad22 { padding: 22px; }
+
+/* line 21, D:/workspace/xrzn-admin/scss/_modify.scss */
+.pad24 { padding: 24px; }
+
+/* line 21, D:/workspace/xrzn-admin/scss/_modify.scss */
+.pad26 { padding: 26px; }
+
+/* line 21, D:/workspace/xrzn-admin/scss/_modify.scss */
+.pad28 { padding: 28px; }
+
+/* line 21, D:/workspace/xrzn-admin/scss/_modify.scss */
+.pad30 { padding: 30px; }
+
+/* line 21, D:/workspace/xrzn-admin/scss/_modify.scss */
+.pad32 { padding: 32px; }
+
+/* line 21, D:/workspace/xrzn-admin/scss/_modify.scss */
+.pad34 { padding: 34px; }
+
+/* line 21, D:/workspace/xrzn-admin/scss/_modify.scss */
+.pad36 { padding: 36px; }
+
+/* line 21, D:/workspace/xrzn-admin/scss/_modify.scss */
+.pad38 { padding: 38px; }
+
+/* line 21, D:/workspace/xrzn-admin/scss/_modify.scss */
+.pad40 { padding: 40px; }
+
+/* line 21, D:/workspace/xrzn-admin/scss/_modify.scss */
+.pad42 { padding: 42px; }
+
+/* line 21, D:/workspace/xrzn-admin/scss/_modify.scss */
+.pad44 { padding: 44px; }
+
+/* line 21, D:/workspace/xrzn-admin/scss/_modify.scss */
+.pad46 { padding: 46px; }
+
+/* line 21, D:/workspace/xrzn-admin/scss/_modify.scss */
+.pad48 { padding: 48px; }
+
+/* line 21, D:/workspace/xrzn-admin/scss/_modify.scss */
+.pad50 { padding: 50px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mart0 { margin-top: 0px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mart2 { margin-top: 2px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mart4 { margin-top: 4px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mart6 { margin-top: 6px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mart8 { margin-top: 8px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mart10 { margin-top: 10px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mart12 { margin-top: 12px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mart14 { margin-top: 14px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mart16 { margin-top: 16px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mart18 { margin-top: 18px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mart20 { margin-top: 20px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mart22 { margin-top: 22px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mart24 { margin-top: 24px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mart26 { margin-top: 26px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mart28 { margin-top: 28px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mart30 { margin-top: 30px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mart32 { margin-top: 32px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mart34 { margin-top: 34px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mart36 { margin-top: 36px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mart38 { margin-top: 38px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mart40 { margin-top: 40px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mart42 { margin-top: 42px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mart44 { margin-top: 44px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mart46 { margin-top: 46px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mart48 { margin-top: 48px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.mart50 { margin-top: 50px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padt0 { padding-top: 0px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padt2 { padding-top: 2px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padt4 { padding-top: 4px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padt6 { padding-top: 6px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padt8 { padding-top: 8px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padt10 { padding-top: 10px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padt12 { padding-top: 12px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padt14 { padding-top: 14px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padt16 { padding-top: 16px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padt18 { padding-top: 18px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padt20 { padding-top: 20px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padt22 { padding-top: 22px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padt24 { padding-top: 24px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padt26 { padding-top: 26px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padt28 { padding-top: 28px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padt30 { padding-top: 30px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padt32 { padding-top: 32px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padt34 { padding-top: 34px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padt36 { padding-top: 36px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padt38 { padding-top: 38px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padt40 { padding-top: 40px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padt42 { padding-top: 42px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padt44 { padding-top: 44px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padt46 { padding-top: 46px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padt48 { padding-top: 48px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padt50 { padding-top: 50px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marr0 { margin-right: 0px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marr2 { margin-right: 2px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marr4 { margin-right: 4px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marr6 { margin-right: 6px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marr8 { margin-right: 8px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marr10 { margin-right: 10px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marr12 { margin-right: 12px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marr14 { margin-right: 14px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marr16 { margin-right: 16px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marr18 { margin-right: 18px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marr20 { margin-right: 20px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marr22 { margin-right: 22px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marr24 { margin-right: 24px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marr26 { margin-right: 26px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marr28 { margin-right: 28px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marr30 { margin-right: 30px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marr32 { margin-right: 32px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marr34 { margin-right: 34px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marr36 { margin-right: 36px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marr38 { margin-right: 38px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marr40 { margin-right: 40px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marr42 { margin-right: 42px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marr44 { margin-right: 44px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marr46 { margin-right: 46px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marr48 { margin-right: 48px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marr50 { margin-right: 50px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padr0 { padding-right: 0px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padr2 { padding-right: 2px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padr4 { padding-right: 4px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padr6 { padding-right: 6px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padr8 { padding-right: 8px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padr10 { padding-right: 10px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padr12 { padding-right: 12px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padr14 { padding-right: 14px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padr16 { padding-right: 16px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padr18 { padding-right: 18px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padr20 { padding-right: 20px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padr22 { padding-right: 22px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padr24 { padding-right: 24px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padr26 { padding-right: 26px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padr28 { padding-right: 28px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padr30 { padding-right: 30px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padr32 { padding-right: 32px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padr34 { padding-right: 34px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padr36 { padding-right: 36px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padr38 { padding-right: 38px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padr40 { padding-right: 40px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padr42 { padding-right: 42px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padr44 { padding-right: 44px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padr46 { padding-right: 46px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padr48 { padding-right: 48px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padr50 { padding-right: 50px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marb0 { margin-bottom: 0px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marb2 { margin-bottom: 2px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marb4 { margin-bottom: 4px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marb6 { margin-bottom: 6px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marb8 { margin-bottom: 8px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marb10 { margin-bottom: 10px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marb12 { margin-bottom: 12px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marb14 { margin-bottom: 14px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marb16 { margin-bottom: 16px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marb18 { margin-bottom: 18px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marb20 { margin-bottom: 20px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marb22 { margin-bottom: 22px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marb24 { margin-bottom: 24px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marb26 { margin-bottom: 26px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marb28 { margin-bottom: 28px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marb30 { margin-bottom: 30px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marb32 { margin-bottom: 32px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marb34 { margin-bottom: 34px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marb36 { margin-bottom: 36px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marb38 { margin-bottom: 38px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marb40 { margin-bottom: 40px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marb42 { margin-bottom: 42px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marb44 { margin-bottom: 44px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marb46 { margin-bottom: 46px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marb48 { margin-bottom: 48px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marb50 { margin-bottom: 50px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padb0 { padding-bottom: 0px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padb2 { padding-bottom: 2px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padb4 { padding-bottom: 4px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padb6 { padding-bottom: 6px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padb8 { padding-bottom: 8px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padb10 { padding-bottom: 10px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padb12 { padding-bottom: 12px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padb14 { padding-bottom: 14px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padb16 { padding-bottom: 16px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padb18 { padding-bottom: 18px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padb20 { padding-bottom: 20px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padb22 { padding-bottom: 22px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padb24 { padding-bottom: 24px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padb26 { padding-bottom: 26px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padb28 { padding-bottom: 28px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padb30 { padding-bottom: 30px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padb32 { padding-bottom: 32px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padb34 { padding-bottom: 34px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padb36 { padding-bottom: 36px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padb38 { padding-bottom: 38px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padb40 { padding-bottom: 40px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padb42 { padding-bottom: 42px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padb44 { padding-bottom: 44px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padb46 { padding-bottom: 46px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padb48 { padding-bottom: 48px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padb50 { padding-bottom: 50px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marl0 { margin-left: 0px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marl2 { margin-left: 2px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marl4 { margin-left: 4px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marl6 { margin-left: 6px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marl8 { margin-left: 8px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marl10 { margin-left: 10px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marl12 { margin-left: 12px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marl14 { margin-left: 14px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marl16 { margin-left: 16px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marl18 { margin-left: 18px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marl20 { margin-left: 20px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marl22 { margin-left: 22px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marl24 { margin-left: 24px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marl26 { margin-left: 26px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marl28 { margin-left: 28px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marl30 { margin-left: 30px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marl32 { margin-left: 32px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marl34 { margin-left: 34px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marl36 { margin-left: 36px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marl38 { margin-left: 38px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marl40 { margin-left: 40px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marl42 { margin-left: 42px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marl44 { margin-left: 44px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marl46 { margin-left: 46px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marl48 { margin-left: 48px; }
+
+/* line 27, D:/workspace/xrzn-admin/scss/_modify.scss */
+.marl50 { margin-left: 50px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padl0 { padding-left: 0px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padl2 { padding-left: 2px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padl4 { padding-left: 4px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padl6 { padding-left: 6px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padl8 { padding-left: 8px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padl10 { padding-left: 10px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padl12 { padding-left: 12px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padl14 { padding-left: 14px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padl16 { padding-left: 16px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padl18 { padding-left: 18px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padl20 { padding-left: 20px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padl22 { padding-left: 22px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padl24 { padding-left: 24px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padl26 { padding-left: 26px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padl28 { padding-left: 28px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padl30 { padding-left: 30px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padl32 { padding-left: 32px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padl34 { padding-left: 34px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padl36 { padding-left: 36px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padl38 { padding-left: 38px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padl40 { padding-left: 40px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padl42 { padding-left: 42px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padl44 { padding-left: 44px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padl46 { padding-left: 46px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padl48 { padding-left: 48px; }
+
+/* line 30, D:/workspace/xrzn-admin/scss/_modify.scss */
+.padl50 { padding-left: 50px; }
+
+/*# sourceMappingURL=base.css.map */

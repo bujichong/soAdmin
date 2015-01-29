@@ -1,0 +1,38 @@
+$baseSize: 10px !default;
+$co_red: #fc0;
+
+@mixin ffs{font-family:"SimSun";}
+@mixin ffyh{font-family:"Microsoft YaHei","STHeiti Light";}
+@mixin hand {cursor: hand;cursor: pointer;}
+@mixin inblock {display: -moz-inline-stack; display: inline-block;*display: inline;*zoom: 1;}
+@mixin ti {text-indent: -999em;overflow: hidden;}
+@mixin vam {vertical-align: middle;}
+
+$baselh:30px;
+@mixin baselh {line-height: 30px;}
+@mixin trans($value : all 0.4s ease-in-out 0s){
+-webkit-transition:$value;
+-moz-transition:$value;
+-o-transition:$value;
+transition:$value;
+}
+
+@mixin radius($value: 4px) {
+    -moz-border-radius: $value;
+    -webkit-border-radius: $value;
+    border-radius: $value;
+}
+@mixin shadow($value:1px 1px 2px #ccc outset) {
+    box-shadow: $value;
+    -webkit-box-shadow: $value;
+    -moz-box-shadow: $value;
+}
+@mixin opacity($value:80){
+    filter: alpha(opacity=$value);opacity: $value/100;
+}
+@function pxToRem($px) {
+  @return $px / $baseSize * 1rem;
+}
+@function emToPx($em) {
+  @return $em * $baseSize * 1px;
+}

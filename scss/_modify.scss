@@ -1,0 +1,32 @@
+/* font-size */
+@for $i from 12 to 40 {
+.fs#{$i} {font-size: #{$i}px;}
+}
+
+/* width */
+@for $i from 1 to 201 {
+.w#{$i*5} {width: $i*5px;}
+}
+
+/* width per */
+@for $i from 1 through 20 {
+.wp#{$i*5} {width: $i*5%;}
+}
+
+/* margin padding*/
+@for $i from 1 to 26 {
+.mar#{$i*2} {margin: $i*2px;}
+}
+@for $i from 1 to 26 {
+.pad#{$i*2} {padding: $i*2px;}
+}
+
+$marpad : (t:top,r:right,b:bottom,l:left);
+@each $k,$v in $marpad{
+    @for $i from 0 to 26 {
+    .mar#{$k}#{$i*2} {margin-#{$v}: $i*2px;}
+    }
+    @for $i from 0 to 26 {
+    .pad#{$k}#{$i*2} {padding-#{$v}: $i*2px;}
+    }
+}

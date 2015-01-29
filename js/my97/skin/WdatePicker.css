@@ -1,0 +1,10 @@
+.Wdate{
+width:95px;
+background:#fff url(inputmark.png) no-repeat 100% 2px;
+}
+.txt-date{width:86px;background:#fff url(inputmark.png) no-repeat 110% -4px;}
+.txt_requireDate{background:url(inputmark.png) no-repeat 100% -1500px;}
+.WdateFmtErr{
+font-weight:bold;
+color:red;
+}

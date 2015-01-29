@@ -1,0 +1,218 @@
+/* base  */
+.red,a.red{color: #d92920;}
+.grey,a.grey{color: #888;}
+.green,a.green{color: green;}
+.blue,a.blue{color: #003c9e;}
+.orange,a.orange{color: #ea5e00;}
+.yellow,a.yellow{color: yellow;}
+.em-rq{color:#d92920;font-family: "宋体";margin:0 2px;}
+a.green:hover,a.blue:hover,a.orange:hover,a.yellow:hover{text-decoration: underline;}
+
+.bg-grey{
+	background-color: #e9e9e9;color:#666;
+	&:hover{background-color: #fafafa;color:#111;}
+}
+.bg-info{
+	background-color: #00a1cb;color:#fff;
+	&:hover{background-color: #00b5e5;}
+}
+.bg-success{
+	background-color: #419641;color:#fff;
+	&:hover{background-color: #5cb85c;}
+}
+.bg-warning{
+	background-color: #f18d05;color:#fff;
+	&:hover{background-color: #F07800;}
+}
+.bg-danger{
+	background-color: #c12e2a;color:#fff;
+	&:hover{background-color: #d9534f;}
+}
+
+.bd-grey{
+	background-color: #eee;border: 1px solid #ccc;color:#555;
+	&:hover{background-color: #fafafa;border: 1px solid #ddd;color:#111;}
+}
+.bd-info{
+	background-color: #F2F9FD;border: 1px solid #99CFEC;color:#0097BD;
+	&:hover{background-color: #F2F9FD;border: 1px solid #B0D9F0;color:#0097BD;}
+}
+.bd-success{
+	background-color: #FBFFF0;border: 1px solid #88C839;color:#70A62D;
+	&:hover{background-color: #FDFEF8;border: 1px solid #AEDA78;color:#70A62D;}
+}
+.bd-warning{
+	background-color: #FFFCF7;border: 1px solid #FF993E;color:#F47E13;
+	&:hover{background-color: #FFFCF7;border: 1px solid #FFB46F;color:#F47E13;}
+}
+.bd-danger{
+	background-color: #FFFBFB;border: 1px solid #FC6B6B;color:#c30;
+	&:hover{background-color: #FFFBFB;border: 1px solid #FB8888;color:#c30;}
+}
+
+.s-icon{@include inblock;width:15px;height:15px;@include vam;margin: -3px 2px 0 0;}
+.icon-plus{background:url(../images/icon15/hospital.png) no-repeat;}
+.icon-pencil{background:url(../images/icon15/edit.png) no-repeat;}
+.icon-remove{background:url(../images/icon15/cancel.png) no-repeat;}
+.icon-refresh{background:url(../images/icon15/reload.png) no-repeat;}
+.icon-search{background:url(../images/icon15/search.png) no-repeat;}
+.icon-down{background:url(../images/icon15/down4.png) no-repeat;}
+.icon-down-w{background:url(../images/icon15/white/down4.png) no-repeat;}
+
+
+.clearfix:after {
+visibility: hidden;
+display: block;
+font-size: 0;
+content: " ";
+clear: both;
+height: 0;
+}
+.clearfix { display: inline-table; }
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+.bgfff{background-color: #fff;}
+.bgeee{background-color: #eee;}
+.bgc-f3{background-color: #f3f3f3;}
+.bgc-fffbf4{background-color: #fffbf4;}
+.bor-rad-1{-moz-border-radius:1px;-webkit-border-radius:1px;border-radius:1px;}
+.bor-rad-2{-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;}
+.bor-rad-3{-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;}
+.bor-rad,.bor-rad-4{-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;}
+.bor-rad-6{-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;}
+.bor-rad-8{-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px;}
+
+.none{display: none;}
+.hidden{visibility:hidden;}
+.fl{float: left;}
+.fr{float: right;}
+.left{text-align:left;}
+.right{text-align:right;}
+.center{text-align:center;}
+.por{position:relative;}
+.poa{position:absolute;}
+.flowauto{overflow: auto;}
+.marauto{margin-left:auto;margin-right:auto}
+.vam{vertical-align: middle;}
+.curhand{cursor:hand;cursor:pointer;}
+
+
+/* grid */
+.grid{
+/*max-width:1220px;*/
+margin:0 auto;}
+.grid:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}
+* html .grid, *:first-child+html .grid{zoom:1}
+
+.grid.flex{width:100%;max-width:100%;padding:0 2%;padding:2em;}
+.row{display:block;overflow:hidden;clear:both;}
+
+*[class*="col-"].alpha{margin-left:0;}
+*[class*="col-"].omega{margin-right:0;}
+
+.col-1  { width: 6.6666666666667%; }
+.col-2  { width: 15%; }
+.col-3  { width: 23.333333333333%; }
+.col-4  { width: 31.666666666667%; }
+.col-5  { width: 40%; }
+.col-6  { width: 48.333333333333%; }
+.col-7  { width: 56.666666666667%; }
+.col-8  { width: 65%; }
+.col-9  { width: 73.333333333333%; }
+.col-10 { width: 81.666666666667%; }
+.col-11 { width: 90%; }
+.col-12 { width: 98.333333333333%; }
+
+*[class*="col-"]{
+margin-left: 0.83333333333333%;
+margin-right: 0.83333333333333%;
+float: left;
+display: block;
+}
+
+.grid img{
+max-width: 100%;
+height:auto;
+}
+
+/* Viewable Grids
+To view your grids, add the class .visible to any grid container.
+This will add a background color so you can see the layout of your grids.
+*/
+*[class*="col-"].visible{background:#eee;border:1px dotted #ccc;}
+/*---------------------------------
+1280-1024 	- desktop (default grid)
+1024-768 	- tablet landscape
+768-480 	- tablet
+480-less 	- phone landscape & smaller
+-----------------------------------*/
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+
+.grid *[class*="col-"]{}
+.show-desktop{display:block;}
+.hide-desktop	{display:none;}
+.show-tablet{display:none;}
+.hide-tablet{display:block;}
+.show-phone{display:none;}
+.hide-phone{display:block;}
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+
+.grid *[class*="col-"]{}
+.show-desktop{display:none;}
+.hide-desktop	{display:block;}
+.show-tablet{display:block;}
+.hide-tablet{display:none;}
+.show-phone{display:none;}
+.hide-phone{display:block;}
+}
+
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+
+.grid *[class*="col-"]{float:none;width:auto;clear:both;display:block;}
+.grid  *{
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+/* columns inside of columns */
+.grid *[class*="col-"] [class*="col-"]{margin-left:0;margin-right:0;width:100%;}
+
+.grid{max-width: 480px;}
+.show-desktop{display:none;}
+.hide-desktop	{display:block;}
+.show-tablet{display:block;}
+.hide-tablet{display:none;}
+.show-phone{display:none;}
+.hide-phone{display:block;}
+}
+
+@media all and (max-width: 480px) {
+
+.grid *[class*="col-"]{
+float:none;
+width:auto;
+clear:both;
+display:block;
+}
+
+/* columns inside of columns */
+.grid *[class*="col-"] [class*="col-"]{
+margin-left:0;
+margin-right:0;
+width:100%;
+}
+
+.grid{max-width: 100%;/*320*/}
+.show-desktop{display:none;}
+.hide-desktop	{display:block;}
+.show-tablet{display:none;}
+.hide-tablet{display:block;}
+.show-phone{display:block;}
+.hide-phone{display:none;}
+}

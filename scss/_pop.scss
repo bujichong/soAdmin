@@ -1,0 +1,48 @@
+/* so-popbox */
+.so-popbox .s-sopop-close, a.a-sopop-btn, span.s-sopop-btn, .s-treeClose, .s-dropClose, .s-break-close, .s-single-close, .s-iiconClose {background: url(../images/sobox/icon-sobox.png) no-repeat;}
+.so-openmask {position: fixed;_position: absolute;top: -2px;left: 0px;width: 100%;height: 0px;background: #000;filter: alpha(opacity=40);opacity: 0.4;z-index: 1100;}
+.so-popbox {background: #fff;text-align: left;z-index: 1120;-moz-border-radius: 4px;-webkit-border-radius: 4px;border-radius: 4px;box-shadow: 0px 0px 6px #555;-webkit-box-shadow: 0px 0px 6px #555;-moz-box-shadow: 0px 0px 6px #555;}
+.h2-sopop {height: 27px;line-height: 26px;background: #f6f6f6;padding-left: 15px;font-weight: bold;-moz-border-radius: 6px 6px 0 0;-webkit-border-radius: 6px 6px 0 0;border-radius: 6px 6px 0 0;border-bottom: 1px solid #dbdbdb;}
+.h2-sopop-move {cursor: move;}
+.so-popbox .s-sopop-close, .s-treeClose, .s-dropClose, .s-break-close, .s-single-close, .s-iiconClose {position: absolute;top: 2px;right: 2px;width: 25px;height: 25px;background-position: -145px 0;text-indent: -999em;overflow: hidden;cursor: hand;cursor: pointer;}
+.so-popbox .s-sopop-close:hover, .s-treeClose:hover, .s-dropClose:hover, .s-break-close:hover, .s-single-close:hover, .s-iiconClose:hover {background-position: -120px 0;}
+.so-popbox .s-sopop-out-close {top: -12px;right: -12px;background-position: 0 0;}
+.so-popbox .s-sopop-out-close:hover {background-position: 0 0;}
+.so-popbox-cont {padding: 15px;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;}
+.p-so-popBtn {text-align: center;padding: 5px 0 15px;}
+.so-popAlert .so-popbox-cont {padding: 15px 15px 10px 15px;}
+.so-popConfirm .so-popbox-cont {padding: 30px 20px 15px 80px;background: url(../images/sobox/icon-tip.png) no-repeat 45px 28px;}/* so-popConfirm */
+.so-popHelp .so-popbox-cont {padding: 20px 20px 20px 85px;background: url(../images/sobox/icon-tip.png) no-repeat 50px -484px;}/* so-popHelp */
+.so-popSuccess .so-popbox-cont {padding: 20px 20px 20px 85px;background: url(../images/sobox/icon-tip.png) no-repeat 50px -984px;}/* so-popSuccess */
+.so-popError .so-popbox-cont {padding: 20px 20px 5px 85px;background: url(../images/sobox/icon-tip.png) no-repeat 50px -1474px;}/* so-popError */
+.so-popAlert .p-so-popBtn {padding: 5px 0 15px;}
+.so-loading, .so-ajaxLoading, .so-ajaxSuccess {border: 0px solid #fff;box-shadow: 1px 1px 1px #666;-webkit-box-shadow: 1px 1px 1px #666;-moz-box-shadow: 1px 1px 1px #666;font-size: 12px;}
+.so-loading .so-popbox-cont {padding: 16px 20px;text-align: center;background: #111 url(../images/sobox/loading.gif) no-repeat center 50%;}
+.so-loading .s-sopop-close, .so-ajaxLoading .s-sopop-close, .so-ajaxSuccess .s-sopop-close {display: none;}
+.so-ajaxLoading .so-popbox-cont {padding: 12px 0 12px 42px;background: #f6f6f6 url(../images/sobox/loading.gif) no-repeat 16px 54%;color: #0b67ac;}
+.so-ajaxSuccess .so-popbox-cont {padding: 12px 0 12px 42px;background: #f6f6f6 url(../images/sobox/icon-tip.png) no-repeat 16px -2488px;color: #177300;}
+a.a-sopop-btn {display: -moz-inline-stack;display: inline-block;*display: inline;*zoom: 1;margin: 0 3px;padding: 0 0 0 15px;color: #fff;background-color: #ec5656;background-position: 0 -40px;}
+span.s-sopop-btn {display: -moz-inline-stack;display: inline-block;*display: inline;*zoom: 1;background-position: 100% -40px;height: 25px;line-height: 23px;padding: 0 15px 0 0;}
+a.a-sopop-cancel {background-position: 0 -70px;color: #444;}
+a.a-sopop-cancel span.s-sopop-btn {background-position: 100% -70px;}
+.so-popTip, .so-popTip-1 {border: 1px solid #f4b23f;background: #fff5d0;box-shadow: 1px 1px 2px #bbb;-webkit-box-shadow: 1px 1px 2px #bbb;-moz-box-shadow: 1px 1px 2px #bbb;}
+.so-popTip-1 .so-popbox-cont {padding: 8px 24px 8px 8px;}
+.so-popTip-2 {border: 0px solid #ff812d;background: #eee7df;color: #970000;}
+.so-popTip-2 .s-sopop-close {display: none;}
+.p-popTip {padding: 2px 0 2px 16px;background: url(../images/i-tip.png) no-repeat;}
+.p-popTip-warning {color: #c00;background-position: 0 4px;}
+.p-popTip-normal {background-position: 0 -95px;}
+.p-popTip-grey, .p-popTip-off {color: #888;background-position: 0 -196px;}
+.p-popTip-success, .p-popTip-on {color: #447131;background-position: 0 -295px;}
+.tip-trackResult {overflow: hidden;}
+.so-popSide-r {border: 0px;-moz-border-radius: 6px;-webkit-border-radius: 6px;border-radius: 6px;box-shadow: 0px 0px 8px #999;-webkit-box-shadow: 0px 0px 8px #999;-moz-box-shadow: 0px 0px 8px #999;}
+.so-popSide-r .s-sopop-close, .so-popSide-r .s-sopop-close:hover {top: 15px;right: -11px;width: 11px;height: 19px;background: url(../images/sobox/i-arrow-r.png) no-repeat 0 0;}
+.so-popSide-r .so-popbox-cont {padding: 12px;}
+.popTreeCarInfo {line-height: 1.4em;min-height: 30px;}
+.popTreeCarInfo .s-title {color: #888;margin-right: 5px;}
+
+.pop-watchMode input,.pop-watchMode textarea,.pop-watchMode .combo{border:1px solid #ddd;background-color: #eee;}
+.form-watchMode input,.form-watchMode textarea,.form-watchMode .combo{border:1px solid #fff;background-color: #fff;}
+.pop-watchMode .em-tip{display: none;}
+.pop-watchMode .p-formbtn{display: none;}
+.pop-watchMode .combo-arrow{display: none;}

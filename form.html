@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html class="  html_form">
+<head>
+<title>欢迎使用祥瑞星网运营平台</title>
+<meta charset="utf-8">
+<link rel="icon" href="/images/xrzn_16_16.ico" type="image/x-icon" />
+<link rel="icon" href="/images/xrzn_16_16.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="themes/default/easyui.css" />
+<link rel="stylesheet" type="text/css" href="themes/icon.css" />
+<link type="text/css" rel="stylesheet" href="css/base.css" />
+</head>
+<body>
+<div class="wrapper-details">
+	<div class="formBox">
+		<h3 class="h3-form"><span class="span-title">添加终端</span></h3>
+		<form class="form-item form-validate hk_form" method="post" action="list.html">
+			<!--<input type="hidden" name="funcId" >-->
+			<div class="grid">
+				<p class="col-5 p-item"><label class="lab-item">功能名称：</label><input type="text" name="funcName" maxlength="100" class="txt"  validate="{required:'功能名称必填'}" /></p>
+				<p class="col-6 p-item"><label class="lab-item">功能简称：</label><input type="text" name="shortName" maxlength="20" class="txt"/></p>
+			</div>
+			<div class="grid">
+				<p class="col-5 p-item"><label class="lab-item">功能图标：</label><input type="text" name="icon" maxlength="20" class="txt"/></p>
+				<p class="col-6 p-item"><label class="lab-item">图标颜色：</label>
+				<select name="color" data-opt="{code:'cmn_color'}" id="drop-iconColor" class="drop hk_select"></select>
+				</p>
+			</div>
+			<div class="grid">
+				<p class="col-5 p-item"><label class="lab-item">所属应用：</label>
+					<input type="hidden" name="appId" id="appId" />
+					<input type="text" name="appName" id="appName"  data-opt="{cls:'popGridList',height:544,type:'grid',boxId:'xx'}"   class="txt hk-pop"/><!-- hk_pop -->
+				</p>
+				<p class="col-6 p-item"><label class="lab-item">功能地址：</label><input type="text" name="url" maxlength="200" class="txt"/></p>
+			</div>
+			<div class="grid">
+				<p class="col-5 p-item"><label class="lab-item">上级功能：</label>
+					<input type="hidden" name="parentId" id="parentId" />
+					<input type="text" name="parentName" id="parentName"  data-opt="{type:'tree',boxId:'yy'}"   class="txt"/><!-- hk_pop -->
+				</p>
+				<p class="col-6 p-item"><label class="lab-item">功能类型：</label>
+					<select name="funcType" data-opt="{code:'Func_FuncType'}"  class="drop hk_select"><option value="">--请选择--</option></select>
+				</p>
+			</div>
+			<div class="grid">
+				<p class="col-5 p-item"><label class="lab-item">匹配路径：</label><input type="text" name="includePath" maxlength="200" class="txt "/></p>
+				<p class="col-6 p-item"><label class="lab-item">排除路径：</label><input type="text" name="excludePath" maxlength="200" class="txt "/></p>
+			</div>
+			<div class="grid">
+				<p class="col-5 p-item"><label class="lab-item">功能状态：</label><select name="funcState" data-opt="{code:'Func_FuncState'}"  class="drop hk_select"><option value="">--请选择--</option></select></p>
+			</div>
+			<p class="p-item p-btn center">
+				<input type="submit" class="btn btn-submit" name="btnSubmit" value="确 定"/>
+				<input type="button" class="btn btn-cancel bd-grey" name="btnCancel" value="取消"/>
+			</p>
+		</form>
+
+	</div>
+</div>
+
+
+
+
+
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="js/my97/WdatePicker.js"></script>
+<script type="text/javascript" src="js/jquery.easyui.ext.js"></script>
+<script type="text/javascript" src="js/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/tools.js"></script>
+
+<script type="text/javascript">
+var $formA = $('.form-validate').soValidate({
+	// inputPar:'.item-txt',
+	submit : function (form) {
+		var formData = form.serializeObject();
+		window.console && console.log(formData);
+
+		$.reqUrlEx({//增加型ajax请求，带等待状态和成功提示框
+			url : 'js/true.json',
+			data : formData,
+			//url : 'js/false.json',
+			type : 'get',//默认不设置为post
+			success : function (data) {
+			//data中需带success参数，判断是否请求成功，{success:true}
+			//{"success":false,"message":"无法删除此记录！"}
+				window.console && console.log(data,'请求成功~');
+				addPop.removePop();
+				$T.gridRefresh('#dataListGrid');//操作完后刷新数据表
+			}
+		});
+		//alert('success');
+	},
+	fail : function (form,failInputs) {
+		window.console && console.log(failInputs);
+		var $failF = $(failInputs[0]);
+		$("html,body").stop().animate({'scrollTop': $failF.offset().top});//定位到第一个验证失败的对象
+		$failF.focus();
+	}
+});
+
+var hkPopO = null;
+$('.hk-pop').click(function() {
+	var popHtml = '<div class="hk-popBox">'+
+	'<div class="hk-popCont">'+
+		'<div class="gridSearch" style="height:40px;">'+
+			'<form class="form-popSearch">'+
+				'<select class="drop" name="sel">'+
+					'<option value="1">选项1</option>'+
+				'</select>'+
+				'<input type="text" name="key" placeholder="关键词" class="txt w200">'+
+				'<input class="btn bg-warning btn-gridListSearch" type="button" value="搜 索" />'+
+			'</form>'+
+		'</div>'+
+		'<div class="popGridbox">'+
+			'<div id="popListGrid"></div>'+
+		'</div>'+
+	'</div>'+
+'</div>';
+
+	//$('body').append(popHtml);
+	var _self = $(this);
+	hkPopO = $.sobox.pop({
+		title : "请选择车间 [双击行选择数据] ",
+		width:600,height:410,
+		// type : 'target',
+		content : popHtml,
+		onPop : function () {
+			setTimeout(function () {
+				$('#popListGrid').datagrid({
+					//title:'DataGrid',
+					url:'json/datagrid_data1.json',
+					 //url:'js/datagrid_data_empty.json',
+					method : 'get',//默认是post
+					//width:700,
+					 height:310,
+					//fitColumns:true,
+					pagination:true,
+					singleSelect : true,
+					pageSize:10,
+					loadMsg : '玩命加载中...',
+					view: myview,
+					emptyMsg: '暂无数据...',
+					columns:[[
+						//{field:'ck',checkbox:true}, //开启多选框 必须：singleSelect : false
+						//{field:'no',title:"编号",hidden:true},
+						{field:'pos',title:'设备存放位置',width:100,align:'center'},
+						{field:'person',title:'负责人',width:100},
+						{field:'phone',title:'联系电话',width:100,align:'center'},
+						{field:'number',title:'设备数量',width:100,align:'center'},
+						{field:'remarks',title:'工作备注',width:100,align:'center'}
+				  	]],
+					onDblClickRow:function (rowIndex, rowData) {
+						window.console && console.log(rowData);
+						_self.val(rowData.pos);
+						hkPopO.removePop();
+					}
+				});
+			}, 50);
+			$('.btn-gridListSearch').click(function() {
+				var searchData = $('.form-popSearch').serializeObject();
+				$('#popListGrid').datagrid('load',searchData);
+			});
+		}
+	})
+});
+
+
+
+
+hk.pop();
+
+</script>
+
+</body>
+</html>
